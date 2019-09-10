@@ -61,10 +61,10 @@
     font-size: 16px;
   }
   .intro {
-    background: url(../img/41.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bgm.jpg);
     background-size: cover;
     color: #fff;
-    padding: 150px 0;
+    padding: 100px 0;
     overflow: hidden;
     position: relative;
   }
@@ -84,6 +84,7 @@
 
   .top-nav-collapse .navbar-brand img {
     width: 45%;
+    margin: 0;
   }
 
   .intro .heading-count h2 {
