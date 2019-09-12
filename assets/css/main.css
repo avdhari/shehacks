@@ -1325,3 +1325,216 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 #logo-img{
 }
+
+/* Speakers
+================================================== */
+
+/* Speakers bg */
+
+.ts-speakers-bg{
+    background-color: #f5f5f5;
+    background-image: url(../images/parallax1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+/* Speaker item */
+
+.ts-speaker {
+    background: #fff;
+    box-shadow: 0 25px 35px -20px rgba(0,0,0,0.35);
+    transition: all .4s ease;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ts-speaker:hover{
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    box-shadow: 0 60px 40px -40px rgba(0,0,0,0.13);
+}
+
+/* Speaker img */
+
+.ts-speaker-image {
+    position: relative;
+    text-align: center;
+}
+
+.ts-speaker-image:after {
+    content: '';
+    position: absolute;
+    background: rgba(41, 41, 41, .8);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    border-radius: 5px;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms;
+}
+.ts-speaker-image .social-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    left: 50%;
+    margin-left: -45px;
+    z-index: 1;
+    width: 96px;
+    opacity: 0;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms;
+}
+.ts-speaker-image .social-links li {
+    display: inline-block;
+    margin: 0 -3px 0px -2px;
+}
+.ts-speaker-image .social-links li a i {
+    display: block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    color: #fff;
+    background: #2b2b2b;
+    text-align: center;
+}
+.ts-speaker-image .social-links li a i.fa-facebook {
+    background: #496daf;
+}
+.ts-speaker-image .social-links li a i.fa-twitter {
+    background: #64acf1;
+}
+.ts-speaker-image .social-links li a i.fa-instagram {
+    background: #d32a1e;
+}
+.ts-speaker-image .social-links li a i.fa-linkedin {
+    background: #0077b5;
+}
+.ts-speaker-image .social-links li a i:hover {
+    background: #1b1b1b;
+}
+.ts-speaker-info {
+    padding: 20px 0;
+    color: #303030;
+}
+.ts-speaker-info .ts-speaker-name {
+    font-size: 18px;
+    margin: 0 0 3px 0;
+}
+.ts-speaker-info .ts-speaker-name a {
+    color: #ff0763;
+}
+.ts-speaker-info .ts-speaker-designation {
+    font-size: 16px;
+}
+.ts-speaker:hover .ts-speaker-image:after,
+.ts-speaker:hover .ts-speaker-image .social-links {
+    opacity: 1;
+}
+
+/* Speaker no gutter */
+
+.row.no-gutter .ts-speaker{
+    box-shadow: none;
+}
+
+.row.no-gutter .ts-speaker:hover{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+
+/* Speakers list */
+.ts-speaker-details{
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.ts-speaker-details-img{
+    position: relative;
+}
+
+.ts-speaker-details-img img{
+    border-radius: 5px 5px 0 0;
+}
+
+.ts-speaker-details-img:after {
+    content: '';
+    position: absolute;
+    background: rgba(17,17,17,0.75);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    border-radius: 5px;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms;
+}
+
+.ts-speaker-details-social{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto
+}
+
+.ts-speaker-details:hover .ts-speaker-details-img:after,
+.ts-speaker-details:hover .ts-speaker-details-social {
+    opacity: 1;
+}
+
+.ts-speaker-details-social li {
+    display: inline-block;
+}
+.ts-speaker-details-social li a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.ts-speaker-details .ts-speaker-info p{
+    margin-bottom: 0;
+}
+
+.ts-speaker-details .ts-speaker-info .ts-speaker-name {
+    font-size: 24px;
+}
+.ts-speaker-session.right{
+    padding-left: 20px;
+}
+
+.ts-speaker-session.left{
+    padding-right: 20px;
+}
+
+.ts-speaker-session .session-title {
+    font-size: 24px;
+    margin-top: 0;
+}
